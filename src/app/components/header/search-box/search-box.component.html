@@ -1,0 +1,12 @@
+<form [formGroup]="options" class="search-box">
+
+  <mat-form-field [floatLabel]="floatLabelControl.value"
+                  [hideRequiredMarker]="hideRequiredControl.value"
+                  appearance="fill"
+                  class="search-box__input">
+    <input matInput placeholder="What do you want to find?" required>
+  </mat-form-field>
+  <button (click)="goSearch()" [color]="'primary'" class="search-box__button" mat-flat-button>Search</button>
+
+</form>
+

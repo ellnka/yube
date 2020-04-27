@@ -1,0 +1,26 @@
+<mat-card class="search-item">
+  <div class="search-item__header"></div>
+  <img [alt]="item.snippet.title" [src]="item.snippet.thumbnails.medium.url" class="search-item__img" mat-card-image>
+  <mat-card-actions class="search-item__actions">
+    <div class="search-item__action-item">
+      <mat-icon class="search-item__action-icon">visibility</mat-icon>
+      <mat-label>{{item.statistics.viewCount}}</mat-label>
+    </div>
+    <div class="search-item__action-item">
+      <mat-icon class="search-item__action-icon">thumb_up</mat-icon>
+      <mat-label>{{item.statistics.likeCount}}</mat-label>
+    </div>
+    <div class="search-item__action-item">
+      <mat-icon class="search-item__action-icon">thumb_down</mat-icon>
+      <mat-label>{{item.statistics.dislikeCount}}</mat-label>
+    </div>
+    <div class="search-item__action-item">
+      <mat-icon class="search-item__action-icon">forum</mat-icon>
+      <mat-label>{{item.statistics.commentCount}}</mat-label>
+    </div>
+  </mat-card-actions>
+  <mat-card-title class="search-item__title">{{item.snippet.title}}</mat-card-title>
+  <mat-card-actions class="search-item__buttons">
+    <button color="primary" mat-flat-button>more</button>
+  </mat-card-actions>
+</mat-card>

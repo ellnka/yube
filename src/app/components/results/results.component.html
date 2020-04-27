@@ -1,0 +1,5 @@
+<div class="results">
+  <div *ngFor="let resultItem of ((searchResult | async)?.items)">
+    <app-search-item [item]="resultItem"></app-search-item>
+  </div>
+</div>

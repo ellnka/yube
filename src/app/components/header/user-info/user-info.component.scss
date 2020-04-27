@@ -1,0 +1,31 @@
+.user-info {
+  height: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+
+  &__name {
+    height: 45px;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 10px;
+  }
+
+  &__avatar {
+    width: 45px;
+    height: 45px;
+    margin: 0 20px 0 10px;
+    background-color: #3f51b5;
+    box-shadow: 2px 0px 4px #2F80ED;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  &__default-avatar {
+    vertical-align: center;
+    padding: 5px;
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="header__row">
+    <div class="header__start"></div>
+    <div class="header__center">
+      <app-search-box></app-search-box>
+      <app-settings-button (isSettingsBoxShown)="toggleSettingsBox($event)"></app-settings-button>
+    </div>
+    <div class="header__end">
+      <app-user-info></app-user-info>
+    </div>
+  </div>
+  <div class="header__row header__row--justify-center">
+    <app-settings-box *ngIf="isSettingsBoxShown"></app-settings-box>
+  </div>
+
+</div>
