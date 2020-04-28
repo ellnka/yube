@@ -15,6 +15,8 @@ import {SettingsButtonComponent} from './components/header/settings-button/setti
 import {SearchItemComponent} from './components/results/search-item/search-item.component';
 import {HttpClientModule} from "@angular/common/http";
 import {SettingsBoxComponent} from './components/header/settings-box/settings-box.component';
+import { SortResultsPipe } from './pipes/sort-results.pipe';
+import { FilterResultsDirective } from './directives/filter-results.directive';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import {SettingsBoxComponent} from './components/header/settings-box/settings-bo
     SearchBoxComponent,
     SettingsButtonComponent,
     SearchItemComponent,
-    SettingsBoxComponent
+    SettingsBoxComponent,
+    SortResultsPipe,
+    FilterResultsDirective
   ],
   imports: [
     BrowserModule,

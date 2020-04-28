@@ -7,5 +7,5 @@ export default interface ISearchResults {
     totalResults: number,
     resultsPerPage: number
   }
-  items: [ISearchItem] | []
+  items: ISearchItem[] | []
 }

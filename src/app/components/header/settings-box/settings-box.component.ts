@@ -23,4 +23,15 @@ export class SettingsBoxComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sortResultsByDate() {
+    this.dataService.changeSortByDate();
+  }
+
+  sortResultsByCountOfViews() {
+    this.dataService.changeSortByCountOfViews();
+  }
+
+  filterResults(filterBy: string) {
+    this.dataService.changeFilterBy(filterBy)
+  }
 }

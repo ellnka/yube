@@ -1,8 +1,6 @@
 <div class="settings-box">
   <mat-label class="settings-box__label">Sort by:</mat-label>
-  <button [color]="'primary'" class="settings-box__button" mat-button>date</button>
-  <button [color]="'primary'" class="settings-box__button" mat-button>count of views</button>
-  <input class="settings-box__input" matInput placeholder="by word or sentence">
-
-
+  <button [color]="'primary'" class="settings-box__button" mat-button (click)="sortResultsByDate()">date</button>
+  <button [color]="'primary'" class="settings-box__button" mat-button (click)="sortResultsByCountOfViews()">count of views</button>
+  <input #filter class="settings-box__input" matInput placeholder="by word or sentence" (input)="filterResults(filter.value)" />
 </div>

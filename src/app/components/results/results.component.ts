@@ -10,13 +10,14 @@ import {DataService} from "../../services/data.service";
 })
 export class ResultsComponent implements OnInit {
   public searchResult: Observable<ISearchResults>;
+  public sortByField: Observable<string>;
 
   constructor(private dataService: DataService) {
     this.searchResult = this.dataService.searchResults;
+    this.sortByField = this.dataService.sortBy;
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 
 }
