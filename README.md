@@ -1,6 +1,6 @@
 # Yube
 
-demo will appear [here](https://ellnka.github.io/yube/index.html)
+demo will appear [here](https://ellnka.github.io/yube/yube)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
